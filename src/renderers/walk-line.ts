@@ -69,7 +69,11 @@ export function walkLine<TItem extends LinePoint, TStyle extends CanvasRendering
 						ctx.lineTo(currentItem.x * horizontalPixelRatio, items[i - 1].y * verticalPixelRatio);
 					}
 
-					ctx.lineTo(currentItem.x * horizontalPixelRatio, currentItem.y * verticalPixelRatio);
+					if (currentItem.y === items[i - 1].y) {
+						ctx.lineTo(currentItem.x * horizontalPixelRatio, currentItem.y * verticalPixelRatio);
+					} else {
+						ctx.moveTo(currentItem.x * horizontalPixelRatio, currentItem.y * verticalPixelRatio);
+					}
 					break;
 				case LineType.Curved: {
 					const [cp1, cp2] = getControlPoints(items, i - 1, i);

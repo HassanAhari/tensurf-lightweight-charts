@@ -1,8 +1,7 @@
 {
-  "private": true,
-  "version": "4.2.0",
-  "name": "lightweight-charts",
-  "author": "TradingView, Inc.",
+  "version": "4.2.74",
+  "name": "tensurf-lightweight-charts",
+  "author": "Tensurf Hub",
   "license": "Apache-2.0",
   "description": "Performant financial charts built with HTML5 canvas",
   "bugs": {

@@ -8,7 +8,7 @@ export function drawCircle(
 	size: number
 ): void {
 	const circleSize = shapeSize('circle', size);
-	const halfSize = (circleSize - 1) / 2;
+	const halfSize = (circleSize - 1) / 4;
 
 	ctx.beginPath();
 	ctx.arc(coords.x, coords.y, halfSize * coords.pixelRatio, 0, 2 * Math.PI, false);

@@ -12,9 +12,9 @@ export function drawArrow(
 	size: number
 ): void {
 	const arrowSize = shapeSize('arrowUp', size);
-	const halfArrowSize = ((arrowSize - 1) / 2) * coords.pixelRatio;
+	const halfArrowSize = ((arrowSize - 1) / 4) * coords.pixelRatio;
 	const baseSize = ceiledOdd(size / 2);
-	const halfBaseSize = ((baseSize - 1) / 2) * coords.pixelRatio;
+	const halfBaseSize = ((baseSize - 1) / 4) * coords.pixelRatio;
 
 	ctx.beginPath();
 	if (up) {
